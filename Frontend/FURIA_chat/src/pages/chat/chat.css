@@ -1,0 +1,95 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom, #000000, #0d0d0d);
+    color: white;
+  }
+  
+  .chat-messages {
+    width: 85%;
+    height: 65vh;
+    overflow-y: auto;
+    background: linear-gradient(to bottom, #050505, #2d2d3a);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 0 10px #bdbdfc55;
+    animation: fadeIn 1s ease;
+    scrollbar-width: thin;
+    scrollbar-color: #646cff #202020;
+  }
+  
+  .chat-input {
+    width: 85%;
+    height: 50px;
+    border-radius: 12px;
+    padding: 0 15px;
+    border: 2px solid #646cff;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .chat-input:focus {
+    border-color: #8b8bff;
+    box-shadow: 0 0 8px #646cff99;
+  }
+  
+  .bot-message {
+    align-self: flex-start;
+    background: linear-gradient(90deg, #646cff, #e66465);
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 18px 18px 18px 4px;
+    max-width: 70%;
+    animation: slideInLeft 0.4s ease;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background-color: #646cff;
+    padding: 12px 18px;
+    border-radius: 18px 18px 4px 18px;
+    max-width: 70%;
+    animation: slideInRight 0.4s ease;
+  }
+  
+
+  .chat-messages::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .chat-messages::-webkit-scrollbar-thumb {
+    background: #646cff;
+    border-radius: 10px;
+  }
+  
+  .chat-messages::-webkit-scrollbar-track {
+    background: #202020;
+  }
+
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  

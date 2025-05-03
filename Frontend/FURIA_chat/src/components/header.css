@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #0d0d0d, #1a1a1a);
+    color: white;
+    box-shadow: 0 2px 8px #646cff33;
+  }
+  
+  .back-button {
+    background: none;
+    border: 2px solid #646cff;
+    color: #646cff;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background: #646cff;
+    color: white;
+    transform: scale(1.05);
+  }
+  
