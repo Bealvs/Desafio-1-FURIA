@@ -1,0 +1,47 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "src/server.ts",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Beatriz Alves dos Santos",
+  "license": "ISC",
+  "description": "Backend for FURIA Chat",
+  "keywords": [
+    "furia",
+    "chat",
+    "backend"
+  ],
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "axios": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "prisma": "^6.6.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src",
+    "start:swagger": "ts-node src/server.ts",
+    "start": "node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "updateMatches": "tsx prisma/updateMatches.ts"
+    
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+    
+  }
+}
