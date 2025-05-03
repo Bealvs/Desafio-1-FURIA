@@ -2,7 +2,6 @@ import cors from "cors";
 import * as dotenv from 'dotenv';
 import express from "express";
 import router from "./routes/index.js";
-import '../prisma/updateMatches';
 
 
 dotenv.config();
