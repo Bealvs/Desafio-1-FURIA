@@ -16,11 +16,5 @@ if ! npx prisma db seed; then
   exit 1
 fi
 
-echo "🚀 Atualizando jogos da FURIA..."
-if ! npm run updateMatches; then
-  echo "❌ Falha ao rodar updateMatches."
-  exit 1
-fi
-
 echo "🚀 Iniciando o servidor..."
 exec npx tsx watch src/server.ts

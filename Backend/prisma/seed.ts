@@ -1,7 +1,7 @@
 import prisma from "../src/lib/prisma";
-import { fetchFuriaGames } from "./updateMatches";
 
 async function main() {
+  
   await prisma.chatOption.createMany({
     data: [
       {
@@ -18,10 +18,7 @@ async function main() {
       {
         option: '2',
         question: 'Próximos jogos',
-        response: [
-          
-        ]
-        
+        response: ["🏆 Próximo jogo: The Mongolz vs Furia | no dia: 10/05/2025"]
       },
       {
         option: '3',
